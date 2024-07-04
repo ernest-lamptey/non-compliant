@@ -1,0 +1,428 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Bighetti Creative Labs</title>
+    <style>
+/* -------------------------------------
+    GLOBAL RESETS
+------------------------------------- */
+
+/*All the styling goes here*/
+
+img {
+  border: none;
+  -ms-interpolation-mode: bicubic;
+  max-width: 100%; 
+}
+
+body {
+  background-color: #f3f3f3;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; 
+}
+
+table {
+  border-collapse: separate;
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+  min-width: 100%;
+  width: 100%; }
+  table td {
+    font-family: sans-serif;
+    font-size: 14px;
+    vertical-align: top; 
+}
+
+/* -------------------------------------
+    BODY & CONTAINER
+------------------------------------- */
+
+.body {
+  background-color: #eaebed;
+  width: 100%; 
+  word-break: break-word;
+}
+
+/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+.container {
+  display: block;
+  Margin: 0 auto !important;
+  /* makes it centered */
+  max-width: 600px;
+  padding: 20px;
+  width: 600px; 
+}
+
+/* This should also be a block element, so that it will fill 100% of the .container */
+.content {
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  max-width: 600px;
+  /* padding: 10px;  */
+}
+
+/* -------------------------------------
+    HEADER, FOOTER, MAIN
+------------------------------------- */
+.main {
+  background: #ffffff;
+  border-radius: 3px;
+  width: 100%; 
+  border-bottom: 4px solid #0CEAAD;
+}
+
+.header {
+  padding: 20px;
+  background: radial-gradient(circle at top right,transparent 10%, rgba(128, 128, 128, 0.025) 10%, rgba(128, 128, 128, 0.025) 20%, transparent 21%), radial-gradient(circle at left bottom,transparent 10%,rgba(128, 128, 128, 0.025) 10%,rgba(128, 128, 128, 0.025) 20%, transparent 21%),radial-gradient(circle at top left,transparent 10%,rgba(128, 128, 128, 0.025) 10%,rgba(128, 128, 128, 0.025) 20%, transparent 21%), radial-gradient(circle at right bottom,transparent 10%,rgba(128, 128, 128, 0.025) 10%,rgba(128, 128, 128, 0.025) 20%, transparent 21%), radial-gradient(circle at center,rgba(128, 128, 128, 0.025) 30%, transparent 31%);
+  background-size: 3em 3em;
+  background-color: #0CEAAD;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  padding: 20px; 
+  display: grid;
+  gap: 20px;
+  background: radial-gradient(circle at top right,transparent 10%, rgba(128, 128, 128, 0.01) 10%, rgba(128, 128, 128, 0.01) 20%, transparent 21%), radial-gradient(circle at left bottom,transparent 10%,rgba(128, 128, 128, 0.01) 10%,rgba(128, 128, 128, 0.01) 20%, transparent 21%),radial-gradient(circle at top left,transparent 10%,rgba(128, 128, 128, 0.01) 10%,rgba(128, 128, 128, 0.01) 20%, transparent 21%), radial-gradient(circle at right bottom,transparent 10%,rgba(128, 128, 128, 0.01) 10%,rgba(128, 128, 128, 0.01) 20%, transparent 21%), radial-gradient(circle at center,rgba(128, 128, 128, 0.01) 30%, transparent 31%);
+  background-size: 3em 3em;
+}
+
+.contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.recipient {
+  padding-left: 10px;
+  text-align: left;
+  border-left: 2px solid #6b6b6b;
+}
+
+.content-block {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.footer {
+  clear: both;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%; 
+}
+  .footer td,
+  .footer p,
+  .footer span,
+  .footer a {
+    color: #9a9ea6;
+    font-size: 12px;
+    text-align: center; 
+}
+
+/* -------------------------------------
+    TYPOGRAPHY
+------------------------------------- */
+h1,
+h2,
+h3,
+h4 {
+  color: #252525;
+  font-family: sans-serif;
+  line-height: 1.2;
+  margin: 0;
+}
+
+h1 {
+  font-size: 35px;
+  text-transform: capitalize; 
+}
+
+h3 {
+  margin: 4px 0;
+}
+
+p,
+ul,
+ol {
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 15px; 
+}
+  p li,
+  ul li,
+  ol li {
+    list-style-position: inside;
+    margin-left: 5px; 
+}
+
+a {
+  color: #0CEAAD;
+  text-decoration: underline; 
+}
+
+
+/* -------------------------------------
+    OTHER STYLES THAT MIGHT BE USEFUL
+------------------------------------- */
+.last {
+  margin-bottom: 0; 
+}
+
+.first {
+  margin-top: 0; 
+}
+
+.align-center {
+  text-align: center; 
+}
+
+.align-right {
+  text-align: right; 
+}
+
+.align-left {
+  text-align: left; 
+}
+
+.clear {
+  clear: both; 
+}
+
+.mt0 {
+  margin-top: 0; 
+}
+
+.mb0 {
+  margin-bottom: 0; 
+}
+
+.preheader {
+  color: transparent;
+  display: none;
+  height: 0;
+  max-height: 0;
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+  mso-hide: all;
+  visibility: hidden;
+  width: 0; 
+}
+
+.powered-by a {
+  text-decoration: none; 
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid #f6f6f6;
+  Margin: 20px 0; 
+}
+
+.bold {
+  font-weight: bold; 
+}
+
+.point {
+  padding: 8px 12px;
+  border-radius:4px;
+  background: #e5eeec;
+  margin-bottom: 8px;
+}
+
+.point > p {
+  margin: 0;
+}
+
+/* -------------------------------------
+    RESPONSIVE AND MOBILE FRIENDLY STYLES
+------------------------------------- */
+@media only screen and (max-width: 620px) {
+  table[class=body] h1 {
+    font-size: 28px !important;
+    margin-bottom: 10px !important; 
+  }
+  table[class=body] p,
+  table[class=body] ul,
+  table[class=body] ol,
+  table[class=body] td,
+  table[class=body] span,
+  table[class=body] a {
+    font-size: 16px !important; 
+  }
+  table[class=body] .wrapper,
+  table[class=body] .article {
+    padding: 10px !important; 
+  }
+  table[class=body] .content {
+    padding: 0 !important; 
+  }
+  table[class=body] .container {
+    padding: 0 !important;
+    width: 100% !important; 
+  }
+  table[class=body] .main {
+    border-left-width: 0 !important;
+    border-radius: 0 !important;
+    border-right-width: 0 !important; 
+  }
+  table[class=body] .btn table {
+    width: 100% !important; 
+  }
+  table[class=body] .btn a {
+    width: 100% !important; 
+  }
+  table[class=body] .img-responsive {
+    height: auto !important;
+    max-width: 100% !important;
+    width: auto !important; 
+  }
+  .wrapper {
+    grid-template-columns: 1fr;
+    gap: 32px
+  }
+  .header {
+    padding: 20px 10px
+  }
+}
+
+/* -------------------------------------
+    PRESERVE THESE STYLES IN THE HEAD
+------------------------------------- */
+@media all {
+  .ExternalClass {
+    width: 100%; 
+  }
+  .ExternalClass,
+  .ExternalClass p,
+  .ExternalClass span,
+  .ExternalClass font,
+  .ExternalClass td,
+  .ExternalClass div {
+    line-height: 100%; 
+  }
+}
+    </style>
+  </head>
+  <body class="">
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
+      <tr>
+        <td>&nbsp;</td>
+        <td class="container">
+          <div class="header">
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td class="align-left" width="100%">
+                  <h1>Partnership Proposal</h1>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="content">
+
+            <!-- START CENTERED WHITE CONTAINER -->
+            <span class="preheader">Introductory Letter for Business Relationship</span>
+            <table role="presentation" class="main">
+
+              <!-- START MAIN CONTENT AREA -->
+              <tr>
+                <td class="wrapper">
+                  <table class="recipient" role="presentation" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td>
+                        <span class="bold">Catherine Harrison</span><br>
+                        <span>Hendricks Greenhouses</span><br>
+                        <span>5095 N Service Road</span><br>
+                        <span>Beamsville (Lincoln), ON</span><br>
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="letter-body" role="presentation" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td>
+                        <p class="bold">Bayreuth, July 2, 2024</p>
+                        <p>Dear John,</p>
+                        <p>I'm Ernest, a Ghanaian software engineer and founder of Bighetti Creative Labs living in Germany. Together with my partner, Eben, a seasoned businessman leading Fastex Global Trade Limited in Ghana, we are reaching out with a proposal that we believe could greatly benefit your greenhouse and many families.</p>
+                        <p>We understand that your greenhouse is part of the Labour Market Impact Assessment (LMIA) program and is actively seeking temporary foreign workers.  We can help provide qualified and dedicated workers from Ghana through our unique system and network.</p>
+                        <h3>How We Can Help</h3>
+                        <div class="point">
+                          <span class="bold">Verified and Qualified Candidates</span>
+                          <p>Our candidates are well educated, carefully vetted and prepared for the transition to working in Canada to meet your specific needs.</p>
+                        </div>
+                        <div class="point">
+                          <span class="bold">Combatting Fraud</span>
+                          <p>Many people have fallen victim to scammers. Our aim is to secure genuine job offers to prevent temporary workers from arriving in Canada without legimitate employment leading to many problems.</p>
+                        </div>
+                        <div class="point">
+                          <span class="bold">Streamlined Process</span>
+                          <p>We have developed a system that will provide pre-screened, highly qualified candidates to simplify your recruitment process.</p>
+                        </div>
+                        <br>
+                        <p>We would love to discuss how we can support your workforce needs. Could we schedule a call or meeting at   your earliest convenience? Thank you for considering this opportunity. We look forward to the possibility of working together.</p>
+                        <p>Yours sincerely,</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="contacts">
+                        <div>
+                          <span class="bold">Ernest Lamptey</span><br>
+                          <span>Bayreuth, Germany</span><br><br>
+                          <span>+49 178 312 5313</span><br>
+                          <span>lamptey07@gmail.com</span><br>
+                        </div>
+                        <div>
+                          <span class="bold">Ebenezer Asiamah</span><br>
+                          <span>Accra, Ghana</span><br><br>
+                          <span>+233 54 467 0019</span><br>
+                          <span>fastexglobaltrade@gmail.com</span><br>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+            <!-- END MAIN CONTENT AREA -->
+            </table>
+
+            <!-- START FOOTER -->
+            <div class="footer">
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="content-block">
+                    <div>
+                      <span>Bighetti Creative Labs</span><br>
+                      <span>J99/8 Moonflower Street</span>
+                      <br>Teshie - Nungua Est., Ghana<br>
+                    </div>
+                    <br>
+                    <div>
+                      <span>Fastex Global Trade Limited</span><br>
+                      <span>19 Teiko Aduemi Street</span>
+                      <br>Accra, Ghana<br>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!-- END FOOTER -->
+
+          <!-- END CENTERED WHITE CONTAINER -->
+          </div>
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </body>
+</html>

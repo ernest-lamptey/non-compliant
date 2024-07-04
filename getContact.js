@@ -39,8 +39,6 @@ async function scrapeCompanyAddress(companyName) {
 
     console.log(`Result: ${address}`)
     companyContacts.push({company: companyName, website: address});
-    fs.writeFileSync('company-contacts.json', JSON.stringify(companyContacts, null, 2));
-
   } catch (error) {
     companyContacts.push({company: companyName, website: 'Company not found'});
     console.error("Something went wrong: ")
@@ -51,7 +49,7 @@ async function scrapeCompanyAddress(companyName) {
 }
 
 async function run () {
-  const farm = JSON.parse(fs.readFileSync('general-farm.json', 'utf8'));
+  const farm = JSON.parse(fs.readFileSync('nursery-greenhouse.json', 'utf8'));
   // Replace 'Company Name' with the name of the company you want to search for
   for (let company of farm) {
     try {
@@ -64,6 +62,7 @@ async function run () {
 
 async function main() {
   await run();
+  fs.writeFileSync('company-contacts.json', JSON.stringify(companyContacts, null, 2));
   console.log('Data written to file');
   process.exit();
 }
